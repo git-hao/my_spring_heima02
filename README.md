@@ -1,29 +1,31 @@
 # my_spring_heima02
 spring黑马教程练习02
-#spring bean
+# spring bean
 [原视频](https://www.bilibili.com/video/av47952931/?p=12)
 
-##耦合：
+## 耦合：
     程序间的依赖关系
         类，方法
-##解耦：
+## 解耦：
     降低程序间的依赖关系
     实际开发中：编译期不依赖，运行时开始依赖
     解耦思路：
         1，创建对象是使用反射，避免使用new
         2，通过读取配置文件获取要创建的对象的全限定类名
 
-##Bean:
+## Bean:
     计算机语言中，指代可重用组件
-##JavaBean:
+## JavaBean:
     用java语言编写的可重用组件
-##范围：
+## 范围：
     javabean > 实体类
-##BeanFactory创建JavaBean：
+    
+## BeanFactory创建JavaBean：
+
 - 第一步
     需要一个配置文件配置service和dao
     唯一标识 = 全限定类名（key = value）
-- 第二部
+- 第二步
     通过读取配置文件，使用反射创建对象
 ## 配置文件格式：
 *.xml  .properties*
